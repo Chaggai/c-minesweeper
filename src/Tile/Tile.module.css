@@ -1,0 +1,17 @@
+:root {
+  --c-primary: #c0c0c0;
+  --c-secondary: #808080;
+  --c-numbers: #ff000;
+  --borders: #fff var(--c-secondary) var(--c-secondary) #fff;
+  --borders-reverse: --borders: var(--c-secondary) #fff #fff var(--c-secondary);
+}
+.Tile {
+  border: 1vmin solid;
+  border-color: var(--borders);
+  background: var(--c-primary);
+  background-color: (--c-primary);
+}
+
+.Clicked {
+  border-color: var(--borders-reverse);
+}
