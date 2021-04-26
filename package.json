@@ -1,4 +1,8 @@
 {
+  "name": "c-minesweeper",
+  "version": "1.0.0",
+  "description": "Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden \"mines\" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field. The game originates from the 1960s, and it has been written for many computing platforms in use today. It has many variations and offshoots.",
+  "main": "index.js",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -6,6 +10,18 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chaggai/c-minesweeper.git"
+  },
+  "keywords": [
+    "minesweeper",
+    "react",
+    "snowpack",
+    "typescript"
+  ],
+  "author": "Chaggai",
+  "license": "ISC",
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
