@@ -9,23 +9,11 @@ interface GridProps {}
 
 const generateTiles = () => {
   const tiles: JSX.Element[] = [];
-
-  const mineTiles = randomlySetMines();
-  console.log(mineTiles);
-
   for (let row = 1; row <= NUM_OF_ROWS; row++) {
     for (let col = 1; col <= NUM_OF_COLS; col++) {
-      tiles.push(
-        <GridTile
-          key={`${row}_${col}`}
-          row={row}
-          col={col}
-          mineTiles={mineTiles}
-        />,
-      );
+      tiles.push(<GridTile key={`${row}_${col}`} row={row} col={col} />);
     }
   }
-
   return tiles;
 };
 
