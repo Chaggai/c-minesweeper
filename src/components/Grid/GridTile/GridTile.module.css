@@ -3,15 +3,18 @@
   --c-secondary: #808080;
   --c-numbers: #ff000;
   --borders: #fff var(--c-secondary) var(--c-secondary) #fff;
-  --borders-reverse: --borders: var(--c-secondary) #fff #fff var(--c-secondary);
+  --borders-reverse: var(--c-secondary) #fff #fff var(--c-secondary);
 }
-.Tile {
+.GridTile {
+  display: flex;
   border: 1vmin solid;
   border-color: var(--borders);
   background: var(--c-primary);
-  background-color: (--c-primary);
+  font-size: 4vmin;
+  align-items: center;
+  justify-content: center;
 }
 
-.Clicked {
-  border-color: var(--borders-reverse);
+.Opened {
+  border: 1px dotted var(--c-secondary);
 }
