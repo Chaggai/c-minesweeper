@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Styles
 import classes from './Counter.module.css';
 
 interface CounterProps {

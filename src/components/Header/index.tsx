@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
-import Counter from './Counter';
 
-import { NUM_OF_MINES } from '../../constants';
+// Styles
 import classes from './Header.module.css';
+
+// Constants
+import { NUM_OF_MINES } from '../../constants';
+
+// Types
 import { FaceEnum } from '../../types';
+
+// Components
 import Face from '../Face';
+import Counter from './Counter';
 
 interface HeaderProps {}
 

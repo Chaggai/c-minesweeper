@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Styles
 import classes from './Face.module.css';
 
 interface FaceProps {

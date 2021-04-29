@@ -1,21 +1,15 @@
 import React from 'react';
 
-import { NUM_OF_ROWS, NUM_OF_COLS } from '../../constants';
-import { randomlySetMines } from '../../utils';
+// Styles
 import classes from './Grid.module.css';
-import GridTile from './GridTile';
+
+// Constants
+import { NUM_OF_ROWS, NUM_OF_COLS } from '../../constants';
+
+// Components
+import Brick from './Brick';
 
 interface GridProps {}
-
-const generateTiles = () => {
-  const tiles: JSX.Element[] = [];
-  for (let row = 1; row <= NUM_OF_ROWS; row++) {
-    for (let col = 1; col <= NUM_OF_COLS; col++) {
-      tiles.push(<GridTile key={`${row}_${col}`} row={row} col={col} />);
-    }
-  }
-  return tiles;
-};
 
 function Grid({}: GridProps) {
   return (
@@ -27,7 +21,7 @@ function Grid({}: GridProps) {
         gridTemplateColumns: `repeat(${NUM_OF_COLS}, 1fr)`,
       }}
     >
-      {generateTiles()}
+      <Brick />
     </div>
   );
 }

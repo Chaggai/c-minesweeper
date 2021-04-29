@@ -1,6 +1,9 @@
 import React from 'react';
 
+// Styles
 import classes from './App.module.css';
+
+// Components
 import Grid from '../Grid';
 import Header from '../Header';
 

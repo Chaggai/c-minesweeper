@@ -5,7 +5,7 @@
   --borders: #fff var(--c-secondary) var(--c-secondary) #fff;
   --borders-reverse: var(--c-secondary) #fff #fff var(--c-secondary);
 }
-.GridTile {
+.Brick {
   display: flex;
   border: 1vmin solid;
   border-color: var(--borders);
