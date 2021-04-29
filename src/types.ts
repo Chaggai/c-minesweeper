@@ -24,4 +24,4 @@ export enum BrickState {
   flagged,
 }
 
-export type Brick = { value: BrickValue; state: BrickState };
+export type Brick = { value: BrickValue; state: BrickState, row: number, col: number, isAMine: boolean };

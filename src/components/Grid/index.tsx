@@ -7,11 +7,21 @@ import classes from './Grid.module.css';
 import { NUM_OF_ROWS, NUM_OF_COLS } from '../../constants';
 
 // Components
-import Brick from './Brick';
+import BrickTile from './BrickTile';
+
+// Custom Hooks
+import { useCreateGrid } from '../../hooks/useCreateGrid';
+
+// Types
+import type { Brick } from '../../types';
 
 interface GridProps {}
 
 const Grid: React.FC<GridProps> = () => {
+  const bricks: Brick[] = useCreateGrid();
+
+  bricks.map((brick) => brick);
+
   return (
     <div
       className={classes.Grid}
@@ -21,7 +31,7 @@ const Grid: React.FC<GridProps> = () => {
         gridTemplateColumns: `repeat(${NUM_OF_COLS}, 1fr)`,
       }}
     >
-      <Brick />
+      {bricks}
     </div>
   );
 };
