@@ -9,7 +9,7 @@ import Header from '../Header';
 
 interface AppProps {}
 
-function App({}: AppProps) {
+const App: React.FC<AppProps> = () => {
   return (
     <div className={classes.App}>
       <Header />
@@ -18,6 +18,6 @@ function App({}: AppProps) {
       </section>
     </div>
   );
-}
+};
 
 export default App;

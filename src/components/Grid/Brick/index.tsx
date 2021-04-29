@@ -5,8 +5,8 @@ import classes from './Brick.module.css';
 
 interface BrickProps {}
 
-function Brick({}: BrickProps) {
+const Brick: React.FC<BrickProps> = () => {
   return <div className={classes.Brick}></div>;
-}
+};
 
 export default Brick;

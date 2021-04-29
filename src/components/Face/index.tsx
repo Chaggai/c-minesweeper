@@ -7,8 +7,8 @@ interface FaceProps {
   face: string;
 }
 
-function Face({ face }: FaceProps) {
+const Face: React.FC<FaceProps> = ({ face }) => {
   return <div className={classes.Face}>{face}</div>;
-}
+};
 
 export default Face;

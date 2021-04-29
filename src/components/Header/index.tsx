@@ -15,7 +15,7 @@ import Counter from './Counter';
 
 interface HeaderProps {}
 
-function Header({}: HeaderProps) {
+const Header: React.FC<HeaderProps> = () => {
   const [numOfMines, setNumOfMines] = useState(NUM_OF_MINES);
   const [timeCount, setTimeCount] = useState(0);
   const [face, setFace] = useState(FaceEnum.smile);
@@ -26,6 +26,6 @@ function Header({}: HeaderProps) {
       <Counter count={String(timeCount).padStart(3, '0')} />
     </header>
   );
-}
+};
 
 export default Header;

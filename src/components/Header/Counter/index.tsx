@@ -7,8 +7,8 @@ interface CounterProps {
   count: string;
 }
 
-function Counter({ count }: CounterProps) {
+const Counter: React.FC<CounterProps> = ({ count }) => {
   return <div className={classes.Counter}>{count}</div>;
-}
+};
 
 export default Counter;

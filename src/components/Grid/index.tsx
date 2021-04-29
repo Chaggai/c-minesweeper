@@ -11,7 +11,7 @@ import Brick from './Brick';
 
 interface GridProps {}
 
-function Grid({}: GridProps) {
+const Grid: React.FC<GridProps> = () => {
   return (
     <div
       className={classes.Grid}
@@ -24,6 +24,6 @@ function Grid({}: GridProps) {
       <Brick />
     </div>
   );
-}
+};
 
 export default Grid;
