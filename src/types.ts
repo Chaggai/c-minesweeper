@@ -25,3 +25,4 @@ export enum BrickState {
 }
 
 export type Brick = { value: BrickValue; state: BrickState, row: number, col: number, isAMine: boolean };
+export type Mine = { row: number, col: number };

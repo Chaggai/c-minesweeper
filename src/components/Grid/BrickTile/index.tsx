@@ -13,7 +13,7 @@ const BrickTile: React.FC<Brick> = ({
   state,
   isAMine,
 }: Brick) => {
-  return <div className={classes.BrickTile}>{`${row}_${col}`}</div>;
+  return <div className={classes.BrickTile}></div>;
 };
 
 export default BrickTile;

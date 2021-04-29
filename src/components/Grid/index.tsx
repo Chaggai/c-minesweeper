@@ -19,9 +19,6 @@ interface GridProps {}
 
 const Grid: React.FC<GridProps> = () => {
   const bricks: Brick[] = useCreateGrid();
-
-  bricks.map((brick) => brick);
-
   return (
     <div
       className={classes.Grid}
