@@ -1,4 +1,4 @@
-# New Project
+# c-minesweeper
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
