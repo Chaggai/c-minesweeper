@@ -11,12 +11,10 @@ export const randomlySetMines = (): Mine[] => {
 
     const currentMine: Mine = {
       row,
-      col
+      col,
     };
 
-    if (
-      mines.some((mine) => mine.row === row && mine.col === col)
-    ) {
+    if (mines.some((mine) => mine.row === row && mine.col === col)) {
       continue;
     }
     i++;
